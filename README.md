@@ -68,7 +68,7 @@ npm install
 
 **Step 4** - *Select a student*
 
-**Step 5** - *Download the submission*
+**Step 5** - *Download the submission in the downloads folder*
 
 **Step 6** - *In windows terminal (Powershell 7): \
     open the folder where you cloned this repo*
