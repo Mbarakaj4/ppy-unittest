@@ -1,10 +1,10 @@
-# Project Name
+# PPY-UNITTEST
 
 ## Description
-This project aims to [briefly describe the purpose and scope of
-the project].
-It provides [key features/functionality] to 
-[target audience or users].
+This project aims to reduce the amount of time expended while testing the
+students assignments.
+It provides automated testing using vitest to facilitate the time tutors
+expend reading code.
 
 ## Table of contents
 * [General Info](#general-info)
@@ -14,35 +14,71 @@ It provides [key features/functionality] to
 * [Contributing](#contributing)
 * [Technologies](#technologies)
 * [Code Examples](#code-examples)
-* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [License](#license)
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of
-the project is? Motivation?
+The project started when me and my colleague noticed that the most time
+consuming part would be checking the JS assignments, so i suggested to
+make use of a testing framework called vitest to make testing suites and
+reduce the time spend in downloading the file, open it in vscode check if
+it runs and then mark in the form the student grade.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+### Ejercitario
+![Consola de comandos mostrando un banner](./img/ejercitario/test-ejercitario.png)
+![Consola de comandos mostrando donde se ejecutara el codigo de los alumnos](./img/ejercitario/test-ejercitario1.png)
+![Consola de comandos mostrando un test exitoso](./img/ejercitario/test-ejercitario2.png)
+![Consola de comandos mostrando un test fallido](./img/ejercitario/test-ejercitario3.png)
+![Consola de comandos mostrando una lista de errores](./img/ejercitario/test-ejercitario4.png)
+### Funciones
+![Consola de comandos mostrando un banner](./img/funciones/funciones.png)
+![Consola de comandos mostrando un test exitoso](./img/funciones/funciones1.png)
+### Operadores
+![Consola de comandos mostrando un banner](./img/operadores/operadores.png)
 
 ## Installation
 To get started with the project, follow these steps:
 
-1. Clone the repository: 
+1. Powershell 7: (msi package recommended)
 ```
-git clone <repository-url>
+https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#installing-the-msi-package
 ```
-2. Install dependencies:
+2. Nodejs v20.15.0 LTS: (pre-built binaries recommended)
+```
+https://nodejs.org/en/download/prebuilt-binaries
+```
+3. Clone the repository: 
+```
+git clone https://github.com/Mbarakaj4/ppy-unittest
+```
+4. Install dependencies:
 ```
 npm install
 ```
-3. [Other necessary installation steps, if applicable]
 
 ## Usage
-[Provide instructions or examples on how to use the project, 
-highlighting important features or commands.]
+**Step 1** - *Go to moodle assignment page*
+
+**Step 2** - *Go to the javascript assignment section and select one*
+
+**Step 3** - *Click view all submissions*
+
+**Step 4** - *Select a student*
+
+**Step 5** - *Download the submission*
+
+**Step 6** - *In windows terminal (Powershell 7): \
+    open the folder where you cloned this repo*
+
+**Step 7** - *Type the name of the script you that need*
+
+
+
+It should be pretty straight forward, the tab key will autocomplete the script you need if you press it multiple times.
+**FUNCIONES AND EJERCITARIO TESTS WONT CONTINUE IF YOU DON'T PRESS ENTER** so if looks like it frozed try that first.
 
 ## Contributing
 Contributions from the community are welcome. To contribute to 
@@ -56,37 +92,32 @@ new feature'
 4. Submit a pull request.
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Vitest - version 1.6.0
+* Nodejs - version 20.15.0
 
 ## Code Examples
-Show examples of usage:
+- If you want to check the operadores assignment
 ```
-put-your-code-here
+PS C:> .\corregir-operadores-ps1
 ```
-
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+- If you want to check the funciones assignment
+```
+PS C:> .\corregir-funciones-ps1
+```
+- If you want to check the ejercitario assignment
+```
+PS C:> .\corregir-ejercitario-ps1
+```
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and 
-why?
+Project is:  _finished_, but I might update it if something goes wrong or if there are any issues. However, it won’t be my top priority.
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Project inspired in https://github.com/alex2rive3/test_ppy
 
 ## License
-This project is licensed under the [license name]. Refer to the 
+This project is licensed under the GNU GPLv3. Refer to the 
 LICENSE file for more details.
 
 ## Contact
-For any questions or feedback, feel free to contact us at [
-email address or other contact information].
+For any questions or feedback, feel free to leave an issue with the question tag.
